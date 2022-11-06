@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" >
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const cargoHold =  ['oxygen tanks', 'space suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket'];
+        cargoHold[cargoHold.length-2]='sapce tether';
+        console.log(cargoHold);
+        let removed_Element = cargoHold.pop();
+        console.log("Removed Element: "+removed_Element);
+        console.log(cargoHold);
+        let removedFirstElement = cargoHold.shift();
+        console.log("First Element: "+removedFirstElement);
+        console.log(cargoHold);
+        cargoHold.unshift(1138);
+        cargoHold.push('20 meters');
+        console.log(cargoHold);
+        let result = `Array Values:\n${cargoHold} \n Length:${cargoHold.length}`;
+        console.log(result);
+    </script>
+</body>
+</html>

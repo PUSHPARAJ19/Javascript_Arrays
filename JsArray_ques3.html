@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Excerise 2
+        const cargoHold =  ['oxygen tanks', 'space suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket'];
+        cargoHold[cargoHold.length-2]='sapce tether';
+        console.log(cargoHold);
+        let removed_Element = cargoHold.pop();
+        console.log("Removed Element: "+removed_Element);
+        console.log(cargoHold);
+        let removedFirstElement = cargoHold.shift();
+        console.log("First Element: "+removedFirstElement);
+        console.log(cargoHold);
+        cargoHold.unshift(1138);
+        cargoHold.push('20 meters');
+        console.log(cargoHold);
+        let result = `Array Values:\n${cargoHold} \n Length:${cargoHold.length}`;
+        console.log(result);
+       //    Excersie 3
+       cargoHold.splice(3,0,'keys');
+       console.log("Array after 1st step: "+cargoHold);
+       cargoHold.splice(cargoHold.indexOf("instruction manual"),1);
+       console.log("Array after 2nd step: "+cargoHold);
+       cargoHold.splice(2,3,'cat','fob','string cheese');
+       console.log("Array after 3rd step: "+cargoHold);
+
+
+    </script>
+</body>
+</html>

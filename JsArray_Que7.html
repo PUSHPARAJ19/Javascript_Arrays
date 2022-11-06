@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //7.1
+       let people = ["Greg", "Mary", "Devon", "James"];
+        for(let i=0;i<people.length;i++)
+        {
+            console.log(people[i]);
+        }
+       //7.2 to 7. 5
+        people.shift(); //removes the 1st element
+        people.pop();   //removes the last element
+        people.unshift('Matt'); //add element in front 
+        people.push("Pushparaj"); //add element in last
+        console.log("After performing the operaions\nArray value till Mary:\n");
+       // 7.6
+        for(let i=0;i<people.length;i++)
+        {
+            if(people[i]=='Mary')
+            {
+                break;
+            }
+            else
+            console.log(people[i]);
+        }
+        //7.7
+        let cpy_arr = people.slice(people.indexOf('Matt'),people.indexOf('Mary'));
+        console.log("Index of Mary: "+people.indexOf('Mary')); //7.8
+        console.log("Index of a missing element: "+people.indexOf("Foo")); //7.9
+        people =["Greg", "Mary", "Devon", "James"]; //7.9
+        people.splice(2,1,"Elizabeth","Artie");
+        console.log(people);  //7.10
+        let withBob = people.concat("Bob");  //7.11
+        console.log("WithBob array: "+withBob);
+
+
+    </script>
+    
+</body>
+</html>
